@@ -26,11 +26,13 @@ public class Application {
 				+ "( "+ rows + " rows & " + seatsProw + " seats are the default value per venue " + ")" +  "\n");
 
 		boolean loop = true;
-        String options = "\t1. start/reset \t2. Available Seats \t3. Request for Hold \t4. Reserve/commit \t5. Exit.";
+		String options = "\t1. start/reset \t 2. Available Seats \t 3. Request for Hold \t 4. Reserve/commit \t 5. Exit.";
 		Venue v = new Venue(rows, seatsProw);
 		TicketService service = new TicketServiceImpl(v);
 		while(loop) {
+			System.out.println("\t*************************************************************************************************");
 			System.out.println(options);
+			System.out.println("\t*************************************************************************************************\n");
 			String str = sc.next();
 			boolean isvalidInput = BookingHelper.isValidNo(str);
 			if(!isvalidInput){

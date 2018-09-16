@@ -11,7 +11,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static junit.framework.TestCase.assertNotNull;
 import static junit.framework.TestCase.assertTrue;
 
-
+/**
+ * @author Antonio Redondo
+ */
 @SpringBootTest
 public class ApplicationTests {
 

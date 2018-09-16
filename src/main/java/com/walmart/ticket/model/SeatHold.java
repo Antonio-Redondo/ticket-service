@@ -3,6 +3,9 @@ package com.walmart.ticket.model;
 import java.time.Instant;
 import java.util.List;
 
+/**
+ * @author Antonio Redondo
+ */
 public class SeatHold {
 
     private static int counter;
