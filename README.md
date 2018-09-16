@@ -14,7 +14,7 @@ Technologies used to develop this application : Spring Boot, Java 1.8 , Maven, J
 
 2. Run the application:
 
-        -Executing test cases:
+        -Including test cases:
 
         mvn clean install spring-boot:run
 
@@ -36,7 +36,7 @@ Objects created:
     Locator: Seats number indexes.
 
     Seat: Contains information about the customer, status and seat number.
-    
+
     Customer: Name and email of the customer.
 
 Service implementation:
