@@ -42,7 +42,7 @@ public class Application {
 			int input = Integer.parseInt(str);
 			switch(input){
 				case 1:
-					System.out.println("How many rows?");
+					System.out.println("How many rows would you like to book?");
 					String xr = sc.next();
 					boolean isvalidRow = BookingHelper.isValidNo(xr);
 					if(!isvalidRow){
@@ -54,7 +54,7 @@ public class Application {
 						}
 					}
 					rows = Integer.parseInt(xr);
-					System.out.println("How many seats per rows?");
+					System.out.println("How many seats per rows would you like to book?");
 					String xst = sc.next();
 					boolean isvalidStPRw = BookingHelper.isValidNo(xst);
 					if(!isvalidStPRw){
@@ -66,7 +66,7 @@ public class Application {
 						}
 					}
 					seatsProw = Integer.parseInt(xst);
-					System.out.println("Expiration seconds : ");
+					System.out.println("Please set an expiration time (seconds) : ");
 					int exp;
 					try {
 						exp = Integer.parseInt(sc.next());
@@ -81,7 +81,7 @@ public class Application {
 					System.out.println("\nNo of seats available now: " + service.numSeatsAvailable() + "\n");
 					break;
 				case 3:
-					System.out.println("How many seats for hold?");
+					System.out.println("How many seats would you like to hold?");
 					String xs = sc.next();
 					boolean isvalidSeat = BookingHelper.isValidNo(xs);
 					if(!isvalidSeat){
@@ -93,7 +93,7 @@ public class Application {
 						}
 					}
 					int seats = Integer.parseInt(xs);
-					System.out.println("Customer email?");
+					System.out.println("Please, provide the customer email?");
 					String email = sc.next();
 					boolean isvalid = BookingHelper.isValidEmail(email);
 					if(!isvalid){
